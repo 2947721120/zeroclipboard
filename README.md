@@ -1,19 +1,19 @@
-### WARNING
+### 警告
 **This `master` branch contains the `v2.x` codebase for ZeroClipboard! For the `v1.x` codebase, see the [`1.x-master`](https://github.com/zeroclipboard/zeroclipboard/tree/1.x-master) branch instead.**
 
 
 # ZeroClipboard
 [![GitHub Latest Release](https://badge.fury.io/gh/zeroclipboard%2Fzeroclipboard.svg)](https://github.com/zeroclipboard/zeroclipboard) [![Build Status](https://secure.travis-ci.org/zeroclipboard/zeroclipboard.svg?branch=master)](https://travis-ci.org/zeroclipboard/zeroclipboard) [![Coverage Status](https://coveralls.io/repos/zeroclipboard/zeroclipboard/badge.svg?branch=master)](https://coveralls.io/r/zeroclipboard/zeroclipboard?branch=master) [![Dependency Status](https://david-dm.org/zeroclipboard/zeroclipboard.svg?theme=shields.io)](https://david-dm.org/zeroclipboard/zeroclipboard) [![Dev Dependency Status](https://david-dm.org/zeroclipboard/zeroclipboard/dev-status.svg?theme=shields.io)](https://david-dm.org/zeroclipboard/zeroclipboard#info=devDependencies)
 
-The ZeroClipboard library provides an easy way to copy text to the clipboard using an invisible [Adobe Flash](http://en.wikipedia.org/wiki/Adobe_Flash) movie and a [JavaScript](http://en.wikipedia.org/wiki/JavaScript) interface. The "Zero" signifies that the library is invisible and the user interface is left entirely up to you.
+zeroclipboard图书馆提供的文本复制到剪贴板的使用看不见的一个简单的方法 [Adobe Flash](http://en.wikipedia.org/wiki/Adobe_Flash) 电影和 [JavaScript](http://en.wikipedia.org/wiki/JavaScript)界面。这个"Zero" 表示该库是不可见的，用户界面完全由你所留下。
 
-This is achieved by automatically floating the invisible movie on top of a [DOM](http://en.wikipedia.org/wiki/Document_Object_Model) element of your choice. Standard mouse events are even propagated out to your DOM element, so you can still have rollover and mousedown effects.
+这是通过自动漂浮在一个看不见的电影 [DOM](http://en.wikipedia.org/wiki/Document_Object_Model)你选择的元素。标准的鼠标事件甚至传播到你的DOM元素，所以你仍然可以有侧翻和MouseDown效果。
 
-Suggestions welcome read over the [contributing](/CONTRIBUTING.md) guidelines.
+建议欢迎阅读 [contributing](/CONTRIBUTING.md) 指南。
 
-## Setup
+## 安装程序
 
-To setup the project for local development start with these commands in your terminal.
+要在终端中设置本地开发项目，开始使用这些命令。
 
 ```sh
 $ git clone https://github.com/zeroclipboard/zeroclipboard.git
@@ -23,29 +23,31 @@ $ npm install
 $ grunt
 ```
 
-## Development
+## 发展
 
-Before submitting a pull request you'll need to validate, build, and test your code. Run the default grunt task in your terminal.
+在提交请求之前，您需要验证、生成和测试代码。在你的终端运行默认的繁重的任务。
 
 ```sh
 $ grunt
 ```
 
-## Testing
+## 测试
 
-If you just want to run the tests, run grunt test.
+如果你想运行测试，测试运行的咕噜。
 
 ```sh
 $ grunt test
 ```
 
-## Limitations
+## 局限性
 
-### User Interaction Required
+### 需要用户交互
 
-Due to browser and Flash security restrictions, this clipboard injection can _**ONLY**_ occur when
-the user clicks on the invisible Flash movie. A simulated `click` event from JavaScript will not
-suffice as this would enable [clipboard poisoning](http://www.computerworld.com/s/article/9117268/Adobe_patches_Flash_clickjacking_and_clipboard_poisoning_bugs).
+由于浏览器和闪存的安全限制，这个剪贴板注入可以 _**ONLY**_ 发生时
+
+用户点击看不见的闪光电影。模拟 `click` 事件的JavaScript将不
+
+这样就够了 [clipboard poisoning](http://www.computerworld.com/s/article/9117268/Adobe_patches_Flash_clickjacking_and_clipboard_poisoning_bugs).
 
 ### Other Limitations
 
